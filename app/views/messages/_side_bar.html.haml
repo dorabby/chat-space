@@ -1,0 +1,15 @@
+.chat-side
+  .side-header
+    .side-header__box 
+      %p.side-header__box__name てすたろう
+      %ul.side-header__box__menu
+        %li.side-header__box__newgroup
+          =link_to "#" do
+            = icon('fa','edit')
+        %li.side-header__box__edit-user
+          =link_to "#" do
+            = icon('fa','cog')
+  .group-list
+    .side-group
+      %p.side-group__name てすと
+      %p.side-group__message こんにちは
