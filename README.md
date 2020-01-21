@@ -30,7 +30,7 @@ Things you may want to cover:
 |email|string|null:false|
 |password|string|null:false|
 ## Association
-- has_many :chats
+- has_many :messages
 - has_many :group_users
 - has_many :groups, through: :group_users
 
@@ -39,11 +39,11 @@ Things you may want to cover:
 |------|----|-------|
 |name|string|null:false|
 ## Asociation
-- has_many :chats
+- has_many :messages
 - has_many :group_users
 - has_many :users, through: :group_users
 
-## chatsテーブル
+## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |text|text||
