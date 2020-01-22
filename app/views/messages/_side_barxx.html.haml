@@ -11,6 +11,10 @@
           =link_to edit_user_path(current_user)do
             = icon('fa','cog')
   .group-list
+    - current_user.groups.each do |group|
     .side-group
-      %p.side-group__name てすと
-      %p.side-group__message こんにちは
+      = link_to group_messages_path(group) do
+      %p.side-group__name
+        = group.name
+      %p.side-group__message
+        メッセージはまだありません
