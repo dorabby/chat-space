@@ -41,6 +41,7 @@
     background-color: #fafafa;
     height: calc(100vh - 190px);
     padding: 40px 35px;
+    overflow: scroll;
     .message{
       &__box{
         margin-bottom: 12px;
@@ -101,4 +102,7 @@
       padding: 0 30px;
     }
   }
+}
+::-webkit-scrollbar {
+  display: none;
 }
