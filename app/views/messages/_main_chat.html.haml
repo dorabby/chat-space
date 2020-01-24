@@ -12,7 +12,6 @@
   .main-contents
     .message
       = render @messages
-
   .form
     = form_for [@group, @message] do |f|
       = f.text_field :text, class: 'form__message', id: 'new_message', placeholder: 'type a message'
