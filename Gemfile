@@ -65,6 +65,10 @@ gem 'mini_magick'
 gem 'carrierwave'
 
 
+group :production do
+  gem 'unicorn', '5.4.1'
+end
+
 group :development do
   gem 'web-console', '>= 3.3.0'
 end
